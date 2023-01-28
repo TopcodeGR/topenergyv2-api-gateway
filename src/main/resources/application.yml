@@ -1,0 +1,11 @@
+server:
+  port: 5005
+eureka:     #tells about the Eureka server details and its refresh time
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    defaultZone: http://localhost:8761/eureka/
+spring:
+  application:
+    name: api-gateway   #current service name to be used by the eureka server
